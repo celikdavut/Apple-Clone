@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #000;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 80;
+    background-color: rgba(22, 22, 23, .8);
+    padding: .8rem;
+}
+
+.menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 3rem;
+}
+
+.menuList a,
+.menuList i {
+    display: flex;
+    font-size: .75rem;
+    color: rgba(255, 255, 255, .8);
+}
+
+.dropdownMenuContainer {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: none;
+}
+
+.dropdownMenu {
+    margin-top: 1.97rem;
+    background-color: #000;
+    color: #fff;
+    padding: 2.5rem 0 5rem 16.5rem;
+    display: flex;
+}
+
+.dropdownMenu h6 {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(134, 134, 139);
+}
+
+.first a {
+    padding-inline-end: 80px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #E8E8ED;
+}
+
+.second {
+    padding-inline-end: 44px;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.third {
+    padding-inline-end: 44px;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.menuListItem:hover .dropdownMenuContainer {
+    display: block;
+    left: 0;
+}
+
+/* MAİN */
+
+/* SECTİON-1 */
+
+.gridSection-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "gridArea-1"
+        "gridArea-2"
+        "gridArea-3";
+    grid-row-gap: 1rem;
+}
+
+/* AREA-1 */
+.gridArea-1 {
+    width: 100%;
+    grid-area: gridArea-1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding-top: 3rem;
+    color: #fff;
+    word-spacing: -.2rem;
+}
+
+.textContainer h2 {
+    font-size: 3.5rem;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 37rem;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: .8rem;
+}
+
+.sectionButton {
+    font-size: 1.3rem;
+    color: #2997ff;
+    font-weight: 500;
+}
+
+.bi-chevron-right {
+    font-size: .9rem;
+    padding-left: .3rem;
+    font-weight: 700;
+}
+
+.sectionButton:hover,
+.sectionButton-2:hover {
+    text-decoration: underline;
+}
+
+/* AREA-2 */
+.gridArea-2 {
+    width: 100%;
+    grid-area: gridArea-2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer-2 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 3rem;
+    color: #000;
+    word-spacing: -.2rem;
+}
+
+.textContainer-2 h2 {
+    font-size: 3.5rem;
+}
+
+.sectionButton-2 {
+    font-size: 1.3rem;
+    color: #06c;
+    font-weight: 400;
+}
+
+/* AREA-3 */
+.gridArea-3 {
+    width: 100%;
+    grid-area: gridArea-3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer-3 {
+    width: 100%;
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    text-align: center;
+    padding-top: 3rem;
+    color: #000;
+    word-spacing: -.2rem;
+}
+
+.textContainer-3 h2 {
+    font-size: 3.5rem;
+}
+
+/* SECTİON-2 */
+
+.gridSection-2 {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: "gridArea-4 gridArea-5"
+        "gridArea-6 gridArea-7"
+        "gridArea-8 gridArea-9";
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    padding: .5rem;
+}
+
+.gridArea-4 {
+
+    grid-area: gridArea-4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.gridArea-5 {
+
+    grid-area: gridArea-5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.gridArea-6 {
+
+    grid-area: gridArea-6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.gridArea-7 {
+
+    grid-area: gridArea-7;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.gridArea-8 {
+
+    grid-area: gridArea-8;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.gridArea-9 {
+
+    grid-area: gridArea-9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer-4 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding-top: 3rem;
+    color: #fff;
+    word-spacing: -.2rem;
+}
+
+.imgContainer-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.textContainer-4 img,
+.textContainer-5 img {
+    width: 8rem;
+    height: 3rem;
+    margin-bottom: .5rem;
+}
+
+.textContainer-5 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding-top: 3rem;
+    color: #000;
+    word-spacing: -.2rem;
+}
+
+.textContainer-4 h4,
+.textContainer-5 h4 {
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.sectionButton-3 {
+    font-size: 1.1rem;
+    color: #06c;
+    font-weight: 400;
+    word-spacing: normal;
+}
+
+.buttonsContainer-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+    gap: .8rem;
+}
+
+.sectionButton-4 {
+    font-size: 1.07rem;
+    color: #2997ff;
+    font-weight: 400;
+    word-spacing: normal;
+}
+
+.sectionButton-3:hover,
+.sectionButton-4:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 2rem;
+}
+
+footer h6 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footerList a {
+    font-size: 12px;
+    font-weight: 450;
+    color: rgba(0, 0, 0, .72);
+}
+
+.innerFooterList {
+    margin-top: 1rem;
+}
+
+.footerBottom {
+    margin: 1.5rem 0;
+}
+
+.footerBottom p {
+    font-size: .82rem;
+    color: rgba(0, 0, 0, .56);
+    font-weight: 300;
+}
+
+.underDiv a {
+    color: #06c;
+    text-decoration: underline;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom span {
+    font-size: 13px;
+    font-weight: 450;
+    color: rgba(0, 0, 0, .72);
+}
+
+.extra {
+    display: flex;
+    gap: .5rem;
+}
+
+.extra a {
+    font-size: 12px;
+    font-weight: 450;
+    color: rgba(0, 0, 0, .72);
+}
+
+.extra a:hover,
+.bottom span:hover,
+.footerList a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
